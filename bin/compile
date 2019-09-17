@@ -3,6 +3,7 @@
 
 # fail fast
 set -e
+set -x
 
 BPLOG_PREFIX="buildpack.gradle"
 
