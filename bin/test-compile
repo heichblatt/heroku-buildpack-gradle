@@ -16,7 +16,10 @@ CACHE_DIR=$2
 ENV_DIR=$3
 
 export GRADLE_TASK="testClasses"
-export GRADLE_USER_HOME=$BUILD_DIR/.gradle
+if [ -z "$GRADLE_USER_HOME" ]; then
+  GRADLE_USER_HOME="${$BUILD_DIR/.gradle}"
+fi
+export GRADLE_USER_HOME
 
 cache_copy ".gradle" $CACHE_DIR $BUILD_DIR
 
