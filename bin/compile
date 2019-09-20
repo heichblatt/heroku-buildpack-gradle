@@ -5,6 +5,8 @@
 set -e
 set -x
 
+echo this is $0
+
 BPLOG_PREFIX="buildpack.gradle"
 
 BP_DIR=$(cd $(dirname $0)/..; pwd) # absolute path
