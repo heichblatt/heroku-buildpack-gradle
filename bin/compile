@@ -78,7 +78,7 @@ cd $BUILD_DIR
 
 # build app
 echo "-----> Building Gradle app..."
-env|grep -v password
+env|grep -vi password
 echo "-----> executing $BUILDCMD"
 
 buildLogFile=$(create_build_log_file)

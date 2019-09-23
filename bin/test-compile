@@ -21,7 +21,7 @@ if [ -z "$GRADLE_USER_HOME" ]; then
 fi
 export GRADLE_USER_HOME
 
-cache_copy ".gradle" $CACHE_DIR $BUILD_DIR
+# cache_copy ".gradle" $CACHE_DIR $BUILD_DIR
 
 $BIN_DIR/compile "$BUILD_DIR" "$CACHE_DIR" "$ENV_DIR"
 
