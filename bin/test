@@ -7,4 +7,4 @@ set -x
 
 echo this is $0
 
-cd ${1} && ./gradlew --gradle-user-home "$1/.gradle" --no-daemon test
+cd ${1} && ./gradlew --no-daemon test
